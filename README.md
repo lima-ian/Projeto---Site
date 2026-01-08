@@ -31,7 +31,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 - **JavaScript**
 - **Git & GitHub** (controle de versão e trabalho em equipe)
 
-> Dependendo do que vocês usaram, você pode adicionar ou remover tecnologias dessa lista.
+
 
 ---
 
