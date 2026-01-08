@@ -18,7 +18,7 @@ O projeto foi desenvolvido em grupo, com a colaboração de dois colegas, focand
 - Boas práticas de desenvolvimento
 - Experiência do usuário (UI/UX)
 
-Durante o desenvolvimento, aplicamos os conhecimentos adquiridos em sala de aula, além de explorar recursos extras para melhorar o visual e a usabilidade do site.
+
 
 ---
 
