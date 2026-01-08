@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game's Hall</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="cadrasto.html">
+                <h1>Não tem um Login? Cadastre-se</h1>
+            </a>
+        </ul>
+    </nav>
+        
+    <header>
+        <img src="./Logo.png" alt="Logo">
+        <div class="company-description">
+            <p>Somos uma empresa fundada em 2024 com o objetivo de levar o entretenimento dos games para todos!</p>
+        </div>
+        
+        <nav class="main-nav">
+            <ul>
+                <li><a href="Consoles.html" class="consoles-link">Consoles</a></li>
+                <li><a href="Jogos.html">Jogos</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="login-box">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <label for="username">Usuário</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Senha</label><br>
+            <input type="password" id="password" name="password"><br>
+           <br><br><br><br><br><br><br><br><button type="submit">Entrar</button>
+        </form>
+    </div>
+    
+    <div class="contact-info">
+        <h2>Sobre nós</h2>
+        <p><strong>Telefone de contato:</strong> 71994097979</p>
+        <p><strong>E-mail do Suporte:</strong> gameshallofc@gmail.com</p>
+        <p><strong>Endereço:</strong> R. Edgar Santos - Doron Salvador/BA</p>
+    </div>
+
+    <div class="main-content">
+       
+        <div class="carousel-container">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="carousel">
+                <a href="Consoles.html"><img src="./PS5.PNG" alt="PS5" class="carousel-image"></a>
+                <a href="Consoles.html"><img src="./NINTENDO.AVIF" alt="Nintendo" class="carousel-image"></a>
+                <a href="JOGOS.html"><img src="./GTA.JPG" alt="GTA" class="carousel-image"></a>
+                <a href="JOGOS.html"><img src="./NBA.JPG" alt="NBA" class="carousel-image"></a>
+                <a href="JOGOS.html"><img src="./rs evil.png" alt="Resident Evil" class="carousel-image"></a>
+                <a href="JOGOS.html"><img src="./STAR WARS.JPG" alt="Star Wars" class="carousel-image"></a>
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        
+
+        <div class="plataformas">
+            <h3>Plataformas:</h3>
+            <nav>
+                <ul>
+                    <li class="plataforma-item">
+                        <img src="./play.svg" alt="Playstation Logo">
+                        Playstation
+                    </li>
+                    <li class="plataforma-item">
+                        <img src="./xbox.svg" alt="Xbox Logo">
+                        Xbox
+                    </li>
+                    <li class="plataforma-item">
+                        <img src="./nintendo.svg" alt="Nintendo Logo">
+                        Nintendo
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="games-list">
+            <h3>Jogos e Consoles Disponíveis:</h3>
+            <ul id="jogos"></ul>
+        </div>
+    </div>
+        
+    </div>
+
+    <script>
+        const jogos = ["GTA V", "Resident Evil", "Xbox Series X", "Playstation 4 Slim", "Mario vs Donkey Kong", "Playstation 5 Slim", "Nintendo Switch", "E muitos outros!"];
+        
+        const listaJogos = document.getElementById("jogos");
+
+        jogos.forEach(jogo => {
+            const li = document.createElement("li");
+            li.textContent = jogo;
+            listaJogos.appendChild(li);
+        });
+
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-image');
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none'; 
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 } 
+            slides[slideIndex - 1].style.display = 'block'; 
+        }
+
+        function moveSlide(n) {
+            slideIndex += n;
+            if (slideIndex > slides.length) { slideIndex = 1; }
+            if (slideIndex < 1) { slideIndex = slides.length; }
+            showSlides();
+        }
+
+        showSlides();
+        setInterval(showSlides, 3000); 
+    </script>
+
+</body>
+</html>

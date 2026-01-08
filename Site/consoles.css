@@ -1,0 +1,195 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: azure;
+    position: relative;
+}  
+#pagina-consoles{
+    text-align: center;
+}
+
+.topo {
+    text-align: center;
+}
+
+.logo {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.direcional {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+    color: black;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+}
+
+.titulo h1 {
+    color: rgb(255, 0, 0);
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.apresentacao {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #0003a1;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+.meu-slideshow {
+    max-width: 900px;
+    height: 400px;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    border: 5px solid rgb(177, 0, 168);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.meu-slideshow .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.filtro {
+    margin: 20px;
+    text-align: center;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.filtro label {
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #333;
+}
+
+.filtro select {
+    font-size: 1em;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.filtro select:hover {
+    border-color: #0056b3;
+}
+
+.direcional h2, .direcional h3, .direcional p {
+    margin: 10px 0;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-conteudo {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.fechar {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.topo {
+    
+    margin-bottom: 20px;
+}
+
+#detalhesCompra {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+

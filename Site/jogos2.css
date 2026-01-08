@@ -1,0 +1,68 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: azure;
+    position: relative;
+}
+
+.logo {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 70px;
+    height: 70px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+h1 {
+    color: #130202; 
+    
+}
+
+.topo {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#detalhesCompra {
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    background-color: #f0f8ff;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mensagem {
+    color: green;
+    font-size: 18px;
+    margin-top: 10px;
+}

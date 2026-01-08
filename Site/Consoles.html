@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game's Hall - Consoles</title>
+    <link rel="stylesheet" href="consoles.css">
+</head>
+<body id="pagina-consoles">
+    <h1>Game's Hall</h1>
+    <a href="Consoles.html">Consoles</a> | <a href="Jogos.html">Jogos</a>
+    <a href="indeex.html">
+        <img src="logo.png" class="logo" alt="logo">
+    </a>
+    <div class="apresentacao">
+        Bem-vinda à nossa seção de consoles. Garanta logo o seu!
+    </div>
+    <div class="filtro">
+        <label for="console-filter">Filtrar por tipo de console:</label>
+        <select id="console-filter" onchange="filterConsoles()">
+            <option value="all">Todos</option>
+            <option value="playstation">Playstation</option>
+            <option value="xbox">Xbox</option>
+            <option value="nintendo">Nintendo</option>
+        </select>
+    </div>
+    <div class="meu-slideshow">
+        <div class="slide fade">
+            <a href="ps4slim.html"><img src="slim.png" alt="PS4 Slim"></a>
+        </div>
+        <div class="slide fade">
+            <a href="ps4fat.html"><img src="fat.png" alt="PS4 Fat"></a>
+        </div>
+        <div class="slide fade">
+            <a href="pspro.html"><img src="pro.png" alt="PS4 Pro"></a>
+        </div>
+        <div class="slide fade">
+            <a href="Ps5se.html"><img src="ps5.png" alt="PS5 Standard Edition"></a>
+        </div>
+        <div class="slide fade">
+            <a href="ps5de.html"><img src="ps5d.png" alt="PS5 Digital Edition"></a>
+        </div>
+        <div class="slide fade">
+            <a href="xsx.html"><img src="SeriesX.png" alt="Xbox Series X"></a>
+        </div>
+        <div class="slide fade">
+            <a href="xss.html"><img src="SeriesS.png" alt="Xbox Series S"></a>
+        </div>
+        <div class="slide fade">
+            <a href="naz.html"><img src="nav.png" alt="Nintendo Switch Azul e Vermelho"></a>
+        </div>
+        <div class="slide fade">
+            <a href="npb.html"><img src="npb.png" alt="Nintendo Switch Preto e Branco"></a>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    <div class="content">
+        <ul id="console-list">
+            <li class="console-item playstation">
+                <a href="ps4slim.html">
+                    <img src="slim.png" alt="PS4 Slim">
+                    <h2>Playstation 4 SLIM 500GB/1TB - Sony</h2>
+                </a>
+                <h1>R$ 2.700,00 <h3>À vista ou boleto</h3></h1>
+            </li>
+            <li class="console-item playstation">
+                <a href="ps4fat.html">
+                    <img src="fat.png" alt="PS4 Fat">
+                    <h2>Playstation 4 Fat 500GB/1TB - Sony</h2>
+                </a>
+                <h1>R$ 2.499,99 <h3>À vista ou boleto</h3></h1>
+            </li>
+            <li class="console-item playstation">
+                <a href="pspro.html">
+                    <img src="pro.png" alt="PS4 Pro">
+                    <h2>Playstation 4 Pro/1TB - Sony</h2>
+                </a>
+                <h1>R$ 3.200,00 <h3>À vista ou boleto</h3></h1>
+            </li>
+            <li class="console-item playstation">
+                <a href="Ps5se.html">
+                    <img src="ps5.png" alt="PS5 Standard">
+                    <h2>Playstation 5 SLIM/Standard Edition - Sony</h2>
+                </a>
+                <h1>R$ 3.700,00 <h3>À vista ou boleto</h3></h1>
+            </li>
+            <li class="console-item playstation">
+                <a href="ps5de.html">
+                    <img src="ps5d.png" alt="PS5 Digital">
+                    <h2>Playstation 5 SLIM/Digital Edition - Sony</h2>
+                </a>
+                <h1>R$ 3.500,00 <h3>À vista ou boleto</h3></h1>
+            </li>
+            <li class="console-item xbox">
+                <a href="xsx.html">
+                    <img src="SeriesX.png" alt="Xbox Series X">
+                    <h2>Xbox Series X/1TB Carbon black</h2>
+                </a>
+                <h1>R$ 4.299,99 <h3>À vista ou boleto</h3></h1>
+            </li>
+            <li class="console-item xbox">
+                <a href="xss.html">
+                    <img src="SeriesS.png" alt="Xbox Series S">
+                    <h2>Xbox Series S/512GB 1TB</h2>
+                </a>
+                <h1>R$ 2.400,00 <h3>À vista ou boleto</h3></h1>
+            </li>
+            <li class="console-item nintendo">
+                <a href="naz.html">
+                    <img src="nav.png" alt="Nintendo Switch">
+                    <h2>Nintendo Switch /32GB 64GB e Vermelho</h2>
+                </a>
+                <h1>R$ 1.950,00 <h3>À vista ou boleto</h3></h1>
+            </li>
+            <li class="console-item nintendo">
+                <a href="nbp.html">
+                    <img src="npb.png" alt="Nintendo Switch Preto e Branco">
+                    <h2>Nintendo Switch /OLED 32GB 64GB Preto e Branco</h2>
+                </a>
+                <h1>R$ 2.200,00 <h3>À vista ou boleto</h3></h1>
+            </li>
+        </ul>
+    </div>
+   
+    <script>
+        function filterConsoles() {
+            const filterValue = document.getElementById('console-filter').value;
+            const consoleItems = document.querySelectorAll('.console-item');
+
+            consoleItems.forEach(item => {
+                if (filterValue === 'all') {
+                    item.style.display = 'list-item';
+                } else if (item.classList.contains(filterValue)) {
+                    item.style.display = 'list-item';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script> 
+    <script src="consoles.js"></script>
+</body>
+</html>

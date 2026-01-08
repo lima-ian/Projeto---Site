@@ -1,0 +1,70 @@
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: azure;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+h1 {
+    color: #130202; 
+}
+
+p {
+    color: #666;
+}
+
+
+
+.apresentacao {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #0003a1;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+.filtro {
+    margin: 20px;
+    text-align: center;
+    background-color: #f0f8ff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 70px;
+    height: 70px;
+}
+
+.topo {
+    text-align: center;
+}
+
+
