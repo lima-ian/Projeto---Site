@@ -1,5 +1,5 @@
 <img width="1895" height="926" alt="Captura de tela 2026-01-07 223800" src="https://github.com/user-attachments/assets/7456c21d-d305-4ab2-abb7-00765192d34d" />
-# 🎮 Game's Hall — Projeto Acadêmico
+ 🎮 Game's Hall — Projeto Acadêmico
 
 Projeto desenvolvido como atividade acadêmica no semestre passado, proposto pelo professor da disciplina.  
 Trata-se de um **site não oficial de venda de consoles e jogos**, criado com o objetivo de aplicar conceitos de desenvolvimento web e trabalho em equipe.
